@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node app.js && python.3.11 main.py",
-    "install": "apt update && apt install software-properties-common && add-apt-repository ppa:deadsnakes/ppa && apt install python3.11"
+    "start": "node app.js && python.3.11 main.py"
   },
   "keywords": [],
   "author": "",
