@@ -13,8 +13,8 @@ app.get('/', (_req, res) => {
 app.listen(PORT, () => {
     child_process.exec("python -m pip install --upgrade pip", () => {
         child_process.exec("python -m pip install requests", () => {
-            child_process.exec("python main.py", () => {
-                
+            child_process.exec("python main.py", (_, msg) => {
+                console.log(msg);
             })
         })
     })
