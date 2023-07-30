@@ -6,3 +6,5 @@ RUN apk update
 COPY ./req.txt /usr/src/app/req.txt
 RUN pip install -r req.txt
 EXPOSE 8000
+
+ENTRYPOINT [ "./entry.sh" ]
