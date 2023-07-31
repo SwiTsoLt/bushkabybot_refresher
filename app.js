@@ -10,7 +10,8 @@ const PORT = process.env.PORT ?? 3000
 
 function start() {
   setInterval(()=>{
-axios.get('https://bushkabybot-b050.onrender.com').then(res => console.log(res.status))
+    axios.get('https://bushkabybot-b050.onrender.com').then(res => console.log(res.status))
+    axios.get('https://bushkabybot-refresher.onrender.com').then(res => console.log(res.status))
   }, 60000) 
 } 
 
